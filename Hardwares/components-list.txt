@@ -1,0 +1,38 @@
+Silent Queue Management System - Bill of Materials
+====================================================
+
+QTY   COMPONENT                          UNIT (INR)   TOTAL (INR)   NOTES
+----  ---------------------------------  -----------  -----------   ----------------------------------------
+1     ESP32 Development Board            250          250           Host unit, USB powered
+2     ESP32-C3 Super Mini                180          360           One per wearable band
+2     LiPo Battery 3.7V 500mAh          120          240           One per band
+2     AMS1117-3.3V Voltage Regulator     5            10            SOT-223 package, one per band
+2     Coin Vibration Motor (10mm DC)     30           60            3V-5V, one per band
+2     LED (Red, 3mm or 5mm)             2            4             One per band
+2     2N2222A NPN Transistor            3            6             Motor switching, one per band
+2     1N4007 Rectifier Diode            2            4             Flyback protection, one per band
+4     Resistor 220 ohm (1/4W)           0.5          2             LED current limiting (2 per band)
+4     Resistor 1k ohm (1/4W)            0.5          2             Transistor base resistor (2 per band)
+1     Jumper Wire Set / Hookup Wire     30           30            For breadboard or PCB connections
+2     PCB / Breadboard (small)          20           40            One per band for assembly
+1     Micro USB Cable                   30           30            For flashing and host power
+----  ---------------------------------  -----------  -----------   ----------------------------------------
+      TOTAL ESTIMATED COST                           1038          For full system (host + 2 bands)
+      COST PER BAND UNIT ONLY                        ~370          Excluding host ESP32 and cables
+
+
+Notes:
+- Prices are approximate retail/online prices (India, 2025)
+- In bulk quantities (10+ units), cost per band drops to under Rs.300
+- LiPo battery is the highest cost item per band and can be substituted with 3x AA (4.5V) + regulator
+- ESP32-C3 Super Mini sourced from AliExpress or Robu.in for best pricing
+- All components are widely available on Amazon India, Robu.in, Evelta.com, and local electronics shops
+
+
+Sourcing Recommendations:
+- ESP32-C3 Super Mini   : Robu.in, AliExpress, Amazon India
+- LiPo 3.7V 500mAh     : Robu.in, Amazon India (search: 502535 LiPo)
+- AMS1117-3.3V         : Any local electronics shop, Evelta.com
+- 2N2222A Transistor   : Any local electronics shop
+- 1N4007 Diode         : Any local electronics shop
+- Coin Motor           : Robu.in, Amazon India (search: 10mm coin vibration motor)
